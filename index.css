@@ -178,12 +178,16 @@ body {
     color: var(--main-color);
     text-transform: uppercase;
 }
+.features  h1 {
+    margin: 5rem auto;
+}
 .features .boxContainer {
     display: grid;
     grid-template-columns: repeat(auto-fit, 35rem);
     gap: 2rem;
     align-items: flex-start;
     justify-content: center;
+    margin-bottom: 2rem;
 }
 .features .boxContainer .box {
     background-position: center !important;
@@ -214,19 +218,23 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    background-blend-mode: multiply;
+    /* background-blend-mode: multiply; */
+    height: 500px;
+    align-items: center;
+
 }
 .aboutUs .flex {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
     align-items: center;
+    height: 100%;
 }
 .aboutUs .flex .image{
     flex: 1 1 30rem;
 }
 .aboutUs .flex .image img {
-    height: 25rem;
+    height: 30rem;
     width: 100%;
     object-fit: contain;
     filter: drop-shadow(var(--box-shadow));
@@ -246,6 +254,9 @@ body {
     padding: 1rem 0;
     line-height: 1.8;
     color: var(--light-white);
+}
+.topGame h1 {
+    margin: 5rem auto;
 }
 .topGame .boxContainer {
     display: grid;
@@ -290,6 +301,8 @@ body {
 }
 .infoContainer {
     background: var(--bg-color);
+    margin: 6rem auto;
+    padding: 4rem auto;
 }
 .infoContainer .boxContainer{
     display: grid;
@@ -311,12 +324,16 @@ body {
     margin-top: 1.6rem;
     color: var(--white);
 }
+.pricing h1{
+    margin-bottom: 7rem ;
+}
 .pricing .boxContainer {
     display: grid;
     grid-template-columns: repeat(auto-fit, 26rem);
     gap: 2rem;
     align-items: flex-start;
     justify-content: center;
+    margin-bottom: 5rem;
 }
 .pricing .boxContainer .box{
     border: var(--border);
@@ -365,6 +382,9 @@ body {
 }
 .pricing .boxContainer .box .list p .fa-xmark {
     color: red;
+}
+.faq h1 {
+    margin: 5rem auto;
 }
 .faq{
     background: url('/Image/faq-Bg-Img.png'),no-repeat;
@@ -417,6 +437,7 @@ body {
 .contact .boxContainer .box{
     background-size: cover !important;
     background-position: center !important;
+    background-color: gray;
     padding: 6rem 4rem;
     box-shadow: var(--box-shadow);
     text-align: center;
@@ -444,6 +465,9 @@ body {
 .contact .form{
     margin-top: 2rem;
     text-align: center;
+}
+.contact .form h1{
+    margin: 7rem auto;
 }
 .contact .form .flex{
     display: flex;
@@ -477,6 +501,7 @@ body {
     background: url('/Image/footer-Bg-Img.jpg'), no-repeat;
     background-size: cover;
     background-position: center;
+    margin-top: 7rem ;
 }
 .footer .boxContainer{
     display: grid;
@@ -531,7 +556,7 @@ body {
     font-size: 1.6rem;
     border-top: var(--border);
     color: var(--light-white);
-    margin: 1.2rem 0;
+    margin: 1.2rem 4rem;
 }
 .footer .credit p:hover{
     color: var(--main-color);
@@ -597,16 +622,35 @@ body {
     .features .boxContainer .box {
         margin: 1.8rem auto;
     }
+    .infoContainer .boxContainer .box {
+        padding: 2.5rem 1rem ;
+    }
+    .aboutUs  {
+        height: 600px;
+    }
+    .contact h1 {
+        margin-bottom: 7rem;
+        gap: 3rem;
+    }
     .footer .credit{
         justify-content: center;
         text-align: center;
     }
     .footer .boxContainer .box{
         text-align: center;
+        padding: 0 3rem;
     }
 }
-@media (max-width:450px){
+@media (max-width:540px){
     html {
         font-size: 50%;
     }
+    .aboutUs .flex .image img{
+        height: 24rem;
+    }
+    
+    .features .boxContainer .box{
+        padding: 2rem 3rem;
+    }
+
 }
